@@ -1,0 +1,19 @@
+body {
+    background-color: lightblue;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "komentari"
+    "rezultati";
+    margin: 20px;
+    text-align: center;
+}
+#commentSection {
+    grid-area: komentari;
+}
+#testResultSection {
+    grid-area: rezultati;
+}
+textarea {
+    max-width: 95%;
+}

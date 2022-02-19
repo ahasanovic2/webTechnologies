@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/student.js"></script>
+    <script src="../js/StudentAjax.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <label for="ime">
+        Ime:
+    </label>
+    <input type="text" id="ime">
+
+    <br>
+    <label for="prezime">
+        Prezime:
+    </label>
+    <input type="text" id="prezime">
+
+    <br>
+    <label for="index">
+        index:
+    </label>
+    <input type="text" id="index">
+
+    <br>
+    <label for="grupa">
+        Grupa:
+    </label>
+    <input type="text" id="grupa">
+
+    <input type="button" value="Posalji podatke" id="btnPosalji" onclick="posaljiPodatke()">
+
+    <div id="ajaxstatus">
+
+    </div>
+</body>
+</html>
