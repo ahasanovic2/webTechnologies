@@ -1,0 +1,122 @@
+body {
+    margin:0;
+    padding:0;
+    background-color: chartreuse;
+}
+.container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "meni"
+    "grupe"
+    "studenti";
+}
+
+#meni {
+    grid-area: meni;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    border-bottom-style: solid;
+}
+
+#meni ul {
+    text-align: center;
+    padding: 10px;
+    list-style-type: none;
+    background-color: rgb(121, 165, 231);
+    
+}
+
+#meni ul li {
+    padding: 10px;
+    font-size: 15px;
+}
+
+#meni li:hover {
+    background-color: rgb(255, 136, 136);
+}
+
+#meni a {
+    color: black;
+    text-decoration: none;
+}
+
+#studenti {
+    grid-area: studenti;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+#grupe {    
+    padding: 20px;
+    grid-area: grupe;
+    margin-top: 1px;
+}
+.jedanStudent {
+    background-color: cornflowerblue;
+    text-align: center;
+    margin: 2%;
+    padding: 0;
+}
+#tabelaGrupe {
+    width: 100%;
+    border:black;
+    border-style: solid;
+    text-align: center;
+}
+td, th {
+    border: black;
+    border-style: solid;
+}
+@media screen and (max-width:499px) {
+    td:not(:nth-child(1)) {
+        display: none;
+    }
+    th:not(:nth-child(1)) {
+        display: none;
+    }
+    #meni ul {
+        box-sizing: border-box;
+        margin:0;
+        padding: 0;
+    }
+    #meni li {
+        width: 95%;
+    }
+    #grupe {
+        border-bottom-style: solid;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:800px) {
+    #meni ul li {
+        display: inline;
+    }
+    #grupe {
+        border-bottom-style: solid;
+    }
+}
+@media screen and (min-width:800px) {
+    .container {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 100px 100%;
+        grid-template-areas: 
+        "meni meni"
+        "studenti grupe";
+    }
+    #meni ul li {
+        display: inline;
+    }
+    #studenti {
+        border-right-style: solid;
+    }
+    #grupe {
+        margin: 0;
+    }
+}

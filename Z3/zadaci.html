@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="zadaci.css">
+    <title>Zadaci</title>
+</head>
+<body>
+    <div id="commentSection">
+        <h3>Komentar</h3>
+        <form>
+            <label for="odabirVjezbe">Odabir vježbe: </label>
+            <select id="odabirVjezbe">
+                <option value="vjezba1">Vježba 1</option>
+                <option value="vjezba2">Vježba 2</option>
+                <option value="vjezba3">Vježba 3</option>
+            </select>
+            <br>
+            <br>
+            <label for="odabirZadatka">Odabir zadataka: </label>
+            <select id="odabirZadatka">
+                <option value="zadatak1">Zadatak 1</option>
+                <option value="zadatak2">Zadatak 2</option>
+                <option value="zadatak3">Zadatak 3</option>
+            </select>
+            <br>
+            <br>
+            <label for="odabirVerzije">Odabir verzije: </label>
+            <select id="odabirVerzije">
+                <option value="verzija1">Verzija 1</option>
+                <option value="verzija2">Verzija 2</option>
+                <option value="verzija3">Verzija 3</option>
+            </select>
+            <br>
+            <br>
+            <label for="komentar">Komentar</label>
+            <br>
+            <textarea id="komentar" rows="10" cols="50"></textarea>
+            <br>
+            <br>
+            <button id="sendButton">Pošalji</button>
+        </form>    
+    </div>
+    <div id="testResultSection">
+        <h3>Rezultati testa</h3>
+        <form>
+            <label for="errorsLog">Errors log:</label>
+            <br>
+            <textarea name="errorsLog" id="errorsLog" cols="50" rows="10"></textarea>
+            <br>
+            <br>
+            <label for="bezGresaka">Bez grešaka</label>
+            <input type="checkbox" name="bezGresaka" id="bezGresaka">
+            <br>
+            <br>
+            <button id="addResultsButton">Dodaj rezultate testa</button>
+        </form>
+    </div>
+</body>
+</html>
